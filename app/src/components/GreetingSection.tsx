@@ -36,7 +36,7 @@ const GreetingMessage = styled.h1`
         width: 8rem;
         height: 0.3rem;
 
-        background: #c6e7ff;
+        background: ${({ theme }) => theme.color.main};
     }
 `;
 

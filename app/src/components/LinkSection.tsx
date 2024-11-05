@@ -30,7 +30,7 @@ const Title = styled.p`
     font-size: 1.2rem;
 
     & > span {
-        color: #c6e7ff;
+        color: ${({ theme }) => theme.color.main};
 
         margin-right: 0.1rem;
     }
