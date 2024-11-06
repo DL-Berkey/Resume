@@ -9,7 +9,7 @@ function App() {
     return (
         <Container>
             <GreetingSection />
-            <LinkSection />
+            {/* <LinkSection /> */}
             <SkillSection />
             <ProjectSection />
         </Container>
