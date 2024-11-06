@@ -1,14 +1,18 @@
 import styled from "styled-components";
 
 import Section from "../styles/common/Section";
+import OutLink from "../styles/common/OutLink";
 
 const GreetingSection = () => {
     return (
         <Section>
-            <GreetingMessage>
-                안녕하세요, <br />
-                저는 김영준입니다.
-            </GreetingMessage>
+            <Greeting>
+                <GreetingMessage>
+                    안녕하세요, <br />
+                    저는 김영준입니다.
+                </GreetingMessage>
+                <OutLink href="//" text="깃허브" />
+            </Greeting>
             <Introduce>
                 저는 빠르게 초기작을 개발하고, 피드백을 통해 지속적으로 개선하는
                 과정을 즐기는 개발자입니다. 협업을 통해 더 나은 결과를 만들어낼
@@ -19,10 +23,17 @@ const GreetingSection = () => {
     );
 };
 
+const Greeting = styled.div`
+    display: flex;
+    align-items: end;
+
+    margin-bottom: 1rem;
+`;
+
 const GreetingMessage = styled.h1`
     position: relative;
 
-    margin-bottom: 1rem;
+    margin-right: 1rem;
 
     font-size: 3rem;
 
