@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 import { Github } from "lucide-react";
 
-import Section from "../styles/Section";
+import Section from "../styles/common/Section";
 
 const LinkSection = () => {
     return (

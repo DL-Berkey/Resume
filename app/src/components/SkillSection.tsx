@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-import Section from "../styles/Section";
-import SectionTitle from "../styles/SectionTitle";
+import Section from "../styles/common/Section";
+import SectionTitle from "../styles/common/SectionTitle";
 
 const SkillSection = () => {
     return (

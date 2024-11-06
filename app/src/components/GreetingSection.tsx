@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import Section from "../styles/Section";
+import Section from "../styles/common/Section";
 
 const GreetingSection = () => {
     return (

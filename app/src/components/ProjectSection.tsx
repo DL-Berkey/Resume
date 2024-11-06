@@ -1,11 +1,8 @@
-// import styled from "styled-components";
-
 import styled from "styled-components";
 
-import { Link } from "lucide-react";
-
-import Section from "../styles/Section";
-import SectionTitle from "../styles/SectionTitle";
+import Section from "../styles/common/Section";
+import SectionTitle from "../styles/common/SectionTitle";
+import OutLink from "../styles/common/OutLink";
 
 const ProjectSection = () => {
     return (
@@ -17,18 +14,12 @@ const ProjectSection = () => {
                     <ProjectLinkWrapper>
                         <OutLink
                             href="https://berkey-chat-bot.vercel.app/login"
-                            target="_blank"
-                        >
-                            바로가기
-                            <Link />
-                        </OutLink>
+                            text="바로가기"
+                        />
                         <OutLink
                             href="https://github.com/DL-Berkey/AI-ChatBot-Project"
-                            target="_blank"
-                        >
-                            깃허브
-                            <Link />
-                        </OutLink>
+                            text="깃허브"
+                        />
                     </ProjectLinkWrapper>
                 </ArticleHeader>
                 <ArticleContent>
@@ -76,18 +67,6 @@ const ProjectLinkWrapper = styled.span`
     gap: 1rem;
 
     margin-left: 1rem;
-`;
-
-const OutLink = styled.a`
-    display: inline-flex;
-
-    align-items: center;
-
-    & > svg {
-        color: ${({ theme }) => theme.color.main};
-
-        transform: scale(50%, 50%);
-    }
 `;
 
 const ArticleHeader = styled.div`

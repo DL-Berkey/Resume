@@ -10,10 +10,7 @@ const Section = ({ children }: Props) => {
 
 const Container = styled.section`
     margin: 2rem;
-    padding-top: 5rem;
     padding-bottom: 5rem;
-
-    border-bottom: 0.1rem solid #a1a1a1;
 `;
 
 export default Section;
